@@ -1,14 +1,13 @@
 services:
   node:
-    image: "node:24-alpine"
-    user: "node"
+    build:
+      context: .
+      dockerfile: dockerfile.dev
+    user: node
     working_dir: /home/node/app
-    environment:
-      - NODE_ENV=production
     volumes:
       - ./:/home/node/app
     ports:
       - "8888:8888"
-    entrypoint: /bin/sh
-    stdin_open: true   # -i
-    tty: true          # -t
+    stdin_open: true
+    tty: true
