@@ -9,4 +9,6 @@ services:
       - ./:/home/node/app
     ports:
       - "8888:8888"
-    command: ["npm", "start"]
+    entrypoint: /bin/sh
+    stdin_open: true   # -i
+    tty: true          # -t
