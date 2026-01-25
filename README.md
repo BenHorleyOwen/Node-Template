@@ -11,4 +11,5 @@ npx nodemon file.js -> hot-reload service
 
 ### for cloning
 git remote set-url origin http://github.com/YOU/YOUR_REPO 
+
 git remote -v -> ensures the remote is correct
