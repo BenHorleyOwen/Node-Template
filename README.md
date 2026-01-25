@@ -3,3 +3,8 @@ template compose stack for node applications run through docker (not requiring t
 
 ### access compose service while running 
 docker compose exec node sh
+
+### run scripts from terminal
+node file.js -> basic node
+
+npx nodemon file.js -> hot-reload service
