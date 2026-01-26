@@ -1,13 +1,10 @@
-# nodetemplate
+# NodeTemplate
 template compose stack for node applications run through docker (not requiring the install of dependancies directly to a system))
+just run docker compose up and go to localhost:8888
+if you want node packages run npm in the dockerfile and rebuild the container
 
 ### access compose service while running 
 docker compose exec node sh
-
-### run scripts from terminal
-node file.js -> basic node
-
-npx nodemon file.js -> hot-reload service
 
 ### for cloning
 
