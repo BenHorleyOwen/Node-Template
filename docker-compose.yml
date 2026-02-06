@@ -6,7 +6,7 @@ services:
     user: node
     working_dir: /home/node/app
     volumes:
-      - ./:/home/node/app
+      - ${SITE_DIR}/:/home/node/app
     ports:
       - "8888:8888"
     stdin_open: true
