@@ -8,6 +8,7 @@ services:
     working_dir: /home/node/app
     volumes:
       - ./site/:/home/node/app
+      - /home/node/app/node_modules #seperate voplume for node_modules to prevent overwriting
     ports:
       - "8888:8888"
     stdin_open: true
